@@ -1,0 +1,198 @@
+:root{
+    --font: 'Varela ROund',sans-serif;;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #14b8a6;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 300px;
+}
+
+.cell{
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    border: 5px solid #0f766e;
+    color: white;
+    font-weight: 700;
+    font-family: var(--font)
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+    border-bottom: none;    
+}
+
+.cell:nth-child(3n+1){
+    border-left: none;
+    border-right: none;
+}
+
+.cell:nth-child(3n+3){
+    border-right: none;
+    border-left: none;
+}
+
+.cell:nth-child(4),
+.cell:nth-child(5),
+.cell:nth-child(6){
+    border-bottom: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8){
+    border-bottom: none;
+}
+
+
+.playerSelect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.plOne{
+    margin-right: 15px;
+}
+
+.selectors{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctrHd{
+    padding: 2px 3px;
+    font-size: 1.115em;
+    font-weight: 700;
+}
+
+.ctr{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    color: #2e1065;
+    font-weight: 800;
+    font-size: 2.5em;
+
+   
+}
+
+.winning-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #14b8a6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    color: white;
+    font-size: 5rem;
+}
+
+.winning-message button{
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.winning-message button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+
+}
+
+.winning-message.show{
+    display: flex;
+    transition: 55ms;
+}
+
+
+@media(max-width: 480px){
+    .container{
+        width: 300px;
+        margin-top: 2.3em;
+        margin: auto;
+        padding-top: 1.5em;
+    }
+
+    .playerSelect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 300px;
+    }
+
+    .board{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .cell{
+        width: 66.6px;
+        height: 66.6px;
+    }
+
+    .selectors{
+        display: flex;
+        width: 150px;
+        height: 50px;
+        flex-direction: row;
+
+    }
+
+    .ctr{
+        font-weight: 700;
+        font-size: 1.5em;
+        height: 30px;
+        align-items: flex-end;
+    }
+
+    .plTie{
+        margin-left: -10px;
+
+    }
+
+}

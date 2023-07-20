@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap"
+     rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="playerSelect">
+            <div class="plXctr selectors">
+                <div class="plOne ctrHd">PLAYER(X)</div>
+                <div class="counter1 ctr"></div>
+            </div>
+            <div class="TieCtr selectors">
+                <div class="plTie ctrHd">TIE</div>
+                <div class="counterTie ctr"></div>
+            </div>
+            <div name="player2(O)" id="secondPlayer" class="selectors">
+                <div class="plTwo ctrHd">PLAYER(O)</div>
+                <div class="counter2 ctr"></div>
+            </div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <div  data-winning-message-text></div>
+            <button type="submit" id="restartButton">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
