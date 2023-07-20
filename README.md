@@ -1,5 +1,5 @@
 # Tic-Tac-Toe-
-The project is built for <a href="https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe" target="_blank"> THE ODIN PROJECT.</a> 
+The project is built for <a href="https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe" target="_blank"> THE ODIN PROJECT.</a> <br>
 <a href = "https://surapheil.github.io/Tic-Tac-Toe-/" target ="_blank">Live Demo</a>
 
 # code
